@@ -10,7 +10,7 @@ void print_arr(int arr[], const int length) {
 	std::cout << std::endl;
 }
 double mean_arr(int arr[], const int length) {
-	int sum = 0;
+	double sum = 0;
 	for (int i = 0; i < length; i++) {
 		sum += arr[i];
 	}
