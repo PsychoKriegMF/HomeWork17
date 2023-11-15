@@ -9,14 +9,13 @@ void print_arr(int arr[], const int length) {
 	}
 	std::cout << std::endl;
 }
-void mean_arr(int arr[], const int length) {
+double mean_arr(int arr[], const int length) {
 	int sum = 0;
-	int avg = 0;
 	for (int i = 0; i < length; i++) {
 		sum += arr[i];
 	}
-	avg = sum / 5;
-	std::cout << avg << "\n\n";
+	 double avg = sum / 5;
+	 return avg;
 }
 void powers(int num1, int num2) {
 		int result = 1;
@@ -60,7 +59,7 @@ int main() {
 	print_arr(arr, size);
 	std::cout << std::endl;
 	std::cout << "Среднее арифметическое массива: ";
-	mean_arr(arr, size);
+	std::cout << mean_arr(arr, size) << std::endl;
 	
 	std::cout << "\tЗадача 3.\nСтепени числа.\n\n";
 	int x, y;
